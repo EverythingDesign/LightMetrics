@@ -120,9 +120,10 @@
 
   svg { display: block; }
 
-  .node-g { cursor: pointer; }
+  .node-g { cursor: pointer; outline: none; }
   .node-g:hover rect { opacity: 0.85; }
-  .node-g:focus { outline: 2px solid var(--purple-600); outline-offset: 2px; border-radius: 8px; }
+  .node-g:focus { outline: none; }
+  .node-g:focus rect { stroke-width: 2; }
 
   .detail-card {
     background: var(--bg);
